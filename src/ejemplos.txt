@@ -1,0 +1,9 @@
+https://medium.com/@kouomeukevin/how-to-implement-caching-with-spring-boot-a85beff2838
+https://medium.com/@bubu.tripathy/partial-data-retrieval-in-spring-boot-rest-api-b62b7a0cae34
+https://dev.to/noelopez/spring-cache-speed-up-your-app-1gf6
+https://blog.stackademic.com/boosting-application-performance-with-caching-in-spring-boot-561b5460da08
+https://medium.com/@AlexanderObregon/enhancing-logging-with-log-and-slf4j-in-spring-boot-applications-f7e70c6e4cc7
+https://gustavopeiretti.com/logging-with-spring-boot/
+https://medium.com/@ankithahjpgowda/spring-retry-overview-6674b06a3235
+https://delta-dev-software.fr/implementing-retry-logic-in-spring-boot-with-spring-retry
+https://gustavopeiretti.com/spring-boot-retry/
