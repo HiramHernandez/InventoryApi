@@ -7,3 +7,5 @@ https://gustavopeiretti.com/logging-with-spring-boot/
 https://medium.com/@ankithahjpgowda/spring-retry-overview-6674b06a3235
 https://delta-dev-software.fr/implementing-retry-logic-in-spring-boot-with-spring-retry
 https://gustavopeiretti.com/spring-boot-retry/
+https://danielme.com/2023/09/18/curso-spring-data-jpa-rutinas-sql-procedimientos-y-funciones-almacenados/
+https://adictosaltrabajo.com/2018/04/25/invocar-a-procedimientos-usando-spring-boot-data-jpa/

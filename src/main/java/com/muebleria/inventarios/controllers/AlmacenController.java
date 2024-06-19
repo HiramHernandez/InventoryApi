@@ -6,6 +6,7 @@ import com.muebleria.inventarios.services.ExternalService;
 import com.muebleria.inventarios.services.contrants.IAlmacenService;
 import com.muebleria.inventarios.utils.CustomResponse;
 import com.muebleria.inventarios.utils.ResultCrud;
+import io.swagger.v3.oas.annotations.media.ArraySchema;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
@@ -36,17 +37,20 @@ public class AlmacenController {
         return ResponseEntity.ok(result);
     }
     @GetMapping
-    @Operation( summary = "Trae una lista de los almacenes")
+    @Operation(summary = "Trae una lista de los almacenes")
     @ApiResponses(
-            value = @ApiResponse(responseCode = "200", description = "Operacion exitosa",
-                    content = {@Content(mediaType = "application/json",
-                            schema = @Schema(implementation = CustomResponse.class))})
-    )//@ApiResponses
+            value = {
+                    @ApiResponse(responseCode = "200", description = "Operación exitosa",
+                            content = @Content(mediaType = "application/json",
+                                    array = @ArraySchema(schema = @Schema(implementation = ResponseAlmacenDto.class)))),
+                    @ApiResponse(responseCode = "404", description = "No se encontraron almacenes"),
+                    @ApiResponse(responseCode = "500", description = "Error interno del servidor")
+            }
+    )//Api Responses
     public ResponseEntity<CustomResponse<List<ResponseAlmacenDto>>>  getAll(
             @RequestParam(required = false, defaultValue = "true") Boolean useCache){
         CustomResponse<List<ResponseAlmacenDto>> customResponse = new CustomResponse<>();
         ResultCrud<List<ResponseAlmacenDto>> resultAlmacenes = this.almacenService.getAll();
-
         customResponse.setData(resultAlmacenes.getData());
         customResponse.setSuccess(resultAlmacenes.getSuccess());
         HttpStatus status;

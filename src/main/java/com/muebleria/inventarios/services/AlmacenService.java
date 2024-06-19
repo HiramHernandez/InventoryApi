@@ -53,6 +53,7 @@ public class AlmacenService implements IAlmacenService {
             almacenes = almacenRepository.findAll().stream()
                     .map(almacen -> mapperResponse.mapToDTO(almacen, ResponseAlmacenDto.class))
                     .collect(Collectors.toList());
+            success = true;
         }catch (DataAccessException ex){
             logger.error(ex.getMessage());
             throw ex;

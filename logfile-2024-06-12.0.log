@@ -1,0 +1,87 @@
+2024-06-12T18:41:20.243-06:00  INFO 17140 --- [inventarios] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-12T18:41:20.287-06:00  INFO 17140 --- [inventarios] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-12T18:41:20.648-06:00  INFO 17140 --- [inventarios] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-12T18:45:08.935-06:00  INFO 33320 --- [inventarios] [main] c.m.inventarios.InventariosApplication   : Starting InventariosApplication using Java 17.0.9 with PID 33320 (D:\DOCUMENTS\GaracheProjects\Learning-Java\spring-guides\inventarios\target\classes started by schir in D:\DOCUMENTS\GaracheProjects\Learning-Java\spring-guides\inventarios)
+2024-06-12T18:45:08.943-06:00  INFO 33320 --- [inventarios] [main] c.m.inventarios.InventariosApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-06-12T18:45:16.876-06:00  INFO 33320 --- [inventarios] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-12T18:45:18.686-06:00  INFO 33320 --- [inventarios] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1661 ms. Found 12 JPA repository interfaces.
+2024-06-12T18:45:25.928-06:00  INFO 33320 --- [inventarios] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-06-12T18:45:26.480-06:00  INFO 33320 --- [inventarios] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-12T18:45:26.481-06:00  INFO 33320 --- [inventarios] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-12T18:45:27.158-06:00  INFO 33320 --- [inventarios] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-12T18:45:27.159-06:00  INFO 33320 --- [inventarios] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 17683 ms
+2024-06-12T18:45:29.376-06:00  INFO 33320 --- [inventarios] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-12T18:45:35.591-06:00  INFO 33320 --- [inventarios] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3f857e08
+2024-06-12T18:45:35.599-06:00  INFO 33320 --- [inventarios] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-12T18:45:37.055-06:00  INFO 33320 --- [inventarios] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-12T18:45:38.565-06:00  INFO 33320 --- [inventarios] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.8.Final
+2024-06-12T18:45:39.741-06:00  INFO 33320 --- [inventarios] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-12T18:45:43.397-06:00  INFO 33320 --- [inventarios] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-12T18:45:56.205-06:00  INFO 33320 --- [inventarios] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-12T18:45:56.213-06:00  INFO 33320 --- [inventarios] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-12T18:46:03.165-06:00  WARN 33320 --- [inventarios] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-12T18:46:07.135-06:00  INFO 33320 --- [inventarios] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-12T18:46:08.286-06:00  INFO 33320 --- [inventarios] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-06-12T18:46:08.302-06:00  INFO 33320 --- [inventarios] [main] c.m.inventarios.InventariosApplication   : Started InventariosApplication in 62.185 seconds (process running for 70.063)
+2024-06-12T18:46:08.462-06:00  INFO 33320 --- [inventarios] [main] c.m.inventarios.InventariosApplication   : Se ha iniciado la aplicación
+2024-06-12T18:46:38.582-06:00  INFO 33320 --- [inventarios] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-12T18:46:38.583-06:00  INFO 33320 --- [inventarios] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-06-12T18:46:38.586-06:00  INFO 33320 --- [inventarios] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-06-12T18:46:42.642-06:00  WARN 33320 --- [inventarios] [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1146, SQLState: 42S02
+2024-06-12T18:46:42.642-06:00 ERROR 33320 --- [inventarios] [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : Table 'inventarios.almacenes' doesn't exist
+2024-06-12T18:46:42.724-06:00 ERROR 33320 --- [inventarios] [http-nio-8080-exec-1] c.m.inventarios.services.AlmacenService  : JDBC exception executing SQL [select a1_0.almacenid,a1_0.nombre,a1_0.ubicacion from almacenes a1_0] [Table 'inventarios.almacenes' doesn't exist] [n/a]; SQL [n/a]
+2024-06-12T18:46:50.734-06:00  WARN 33320 --- [inventarios] [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1146, SQLState: 42S02
+2024-06-12T18:46:50.734-06:00 ERROR 33320 --- [inventarios] [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : Table 'inventarios.almacenes' doesn't exist
+2024-06-12T18:46:50.737-06:00 ERROR 33320 --- [inventarios] [http-nio-8080-exec-1] c.m.inventarios.services.AlmacenService  : JDBC exception executing SQL [select a1_0.almacenid,a1_0.nombre,a1_0.ubicacion from almacenes a1_0] [Table 'inventarios.almacenes' doesn't exist] [n/a]; SQL [n/a]
+2024-06-12T18:46:58.754-06:00  WARN 33320 --- [inventarios] [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1146, SQLState: 42S02
+2024-06-12T18:46:58.755-06:00 ERROR 33320 --- [inventarios] [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : Table 'inventarios.almacenes' doesn't exist
+2024-06-12T18:46:58.758-06:00 ERROR 33320 --- [inventarios] [http-nio-8080-exec-1] c.m.inventarios.services.AlmacenService  : JDBC exception executing SQL [select a1_0.almacenid,a1_0.nombre,a1_0.ubicacion from almacenes a1_0] [Table 'inventarios.almacenes' doesn't exist] [n/a]; SQL [n/a]
+2024-06-12T18:47:06.795-06:00  WARN 33320 --- [inventarios] [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1146, SQLState: 42S02
+2024-06-12T18:47:06.796-06:00 ERROR 33320 --- [inventarios] [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : Table 'inventarios.almacenes' doesn't exist
+2024-06-12T18:47:06.799-06:00 ERROR 33320 --- [inventarios] [http-nio-8080-exec-1] c.m.inventarios.services.AlmacenService  : JDBC exception executing SQL [select a1_0.almacenid,a1_0.nombre,a1_0.ubicacion from almacenes a1_0] [Table 'inventarios.almacenes' doesn't exist] [n/a]; SQL [n/a]
+2024-06-12T18:47:14.816-06:00  WARN 33320 --- [inventarios] [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1146, SQLState: 42S02
+2024-06-12T18:47:14.817-06:00 ERROR 33320 --- [inventarios] [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : Table 'inventarios.almacenes' doesn't exist
+2024-06-12T18:47:14.821-06:00 ERROR 33320 --- [inventarios] [http-nio-8080-exec-1] c.m.inventarios.services.AlmacenService  : JDBC exception executing SQL [select a1_0.almacenid,a1_0.nombre,a1_0.ubicacion from almacenes a1_0] [Table 'inventarios.almacenes' doesn't exist] [n/a]; SQL [n/a]
+2024-06-12T18:47:22.843-06:00  WARN 33320 --- [inventarios] [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1146, SQLState: 42S02
+2024-06-12T18:47:22.845-06:00 ERROR 33320 --- [inventarios] [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : Table 'inventarios.almacenes' doesn't exist
+2024-06-12T18:47:22.853-06:00 ERROR 33320 --- [inventarios] [http-nio-8080-exec-1] c.m.inventarios.services.AlmacenService  : JDBC exception executing SQL [select a1_0.almacenid,a1_0.nombre,a1_0.ubicacion from almacenes a1_0] [Table 'inventarios.almacenes' doesn't exist] [n/a]; SQL [n/a]
+2024-06-12T18:47:30.860-06:00  WARN 33320 --- [inventarios] [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1146, SQLState: 42S02
+2024-06-12T18:47:30.860-06:00 ERROR 33320 --- [inventarios] [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : Table 'inventarios.almacenes' doesn't exist
+2024-06-12T18:47:30.864-06:00 ERROR 33320 --- [inventarios] [http-nio-8080-exec-1] c.m.inventarios.services.AlmacenService  : JDBC exception executing SQL [select a1_0.almacenid,a1_0.nombre,a1_0.ubicacion from almacenes a1_0] [Table 'inventarios.almacenes' doesn't exist] [n/a]; SQL [n/a]
+2024-06-12T18:47:38.879-06:00  WARN 33320 --- [inventarios] [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1146, SQLState: 42S02
+2024-06-12T18:47:38.880-06:00 ERROR 33320 --- [inventarios] [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : Table 'inventarios.almacenes' doesn't exist
+2024-06-12T18:47:38.890-06:00 ERROR 33320 --- [inventarios] [http-nio-8080-exec-1] c.m.inventarios.services.AlmacenService  : JDBC exception executing SQL [select a1_0.almacenid,a1_0.nombre,a1_0.ubicacion from almacenes a1_0] [Table 'inventarios.almacenes' doesn't exist] [n/a]; SQL [n/a]
+2024-06-12T18:47:46.904-06:00  WARN 33320 --- [inventarios] [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1146, SQLState: 42S02
+2024-06-12T18:47:46.904-06:00 ERROR 33320 --- [inventarios] [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : Table 'inventarios.almacenes' doesn't exist
+2024-06-12T18:47:46.907-06:00 ERROR 33320 --- [inventarios] [http-nio-8080-exec-1] c.m.inventarios.services.AlmacenService  : JDBC exception executing SQL [select a1_0.almacenid,a1_0.nombre,a1_0.ubicacion from almacenes a1_0] [Table 'inventarios.almacenes' doesn't exist] [n/a]; SQL [n/a]
+2024-06-12T18:47:54.930-06:00  WARN 33320 --- [inventarios] [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1146, SQLState: 42S02
+2024-06-12T18:47:54.931-06:00 ERROR 33320 --- [inventarios] [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : Table 'inventarios.almacenes' doesn't exist
+2024-06-12T18:47:54.937-06:00 ERROR 33320 --- [inventarios] [http-nio-8080-exec-1] c.m.inventarios.services.AlmacenService  : JDBC exception executing SQL [select a1_0.almacenid,a1_0.nombre,a1_0.ubicacion from almacenes a1_0] [Table 'inventarios.almacenes' doesn't exist] [n/a]; SQL [n/a]
+2024-06-12T19:10:49.126-06:00  INFO 32196 --- [inventarios] [main] c.m.inventarios.InventariosApplication   : Starting InventariosApplication using Java 17.0.9 with PID 32196 (D:\DOCUMENTS\GaracheProjects\Learning-Java\spring-guides\inventarios\target\classes started by schir in D:\DOCUMENTS\GaracheProjects\Learning-Java\spring-guides\inventarios)
+2024-06-12T19:10:49.130-06:00  INFO 32196 --- [inventarios] [main] c.m.inventarios.InventariosApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-06-12T19:10:55.150-06:00  INFO 32196 --- [inventarios] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-12T19:10:55.572-06:00  INFO 32196 --- [inventarios] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 374 ms. Found 12 JPA repository interfaces.
+2024-06-12T19:11:03.217-06:00  INFO 32196 --- [inventarios] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-06-12T19:11:03.381-06:00  INFO 32196 --- [inventarios] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-12T19:11:03.382-06:00  INFO 32196 --- [inventarios] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-12T19:11:03.992-06:00  INFO 32196 --- [inventarios] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-12T19:11:03.993-06:00  INFO 32196 --- [inventarios] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 14720 ms
+2024-06-12T19:11:04.990-06:00  INFO 32196 --- [inventarios] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-12T19:11:12.330-06:00  INFO 32196 --- [inventarios] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@9b2dc56
+2024-06-12T19:11:12.334-06:00  INFO 32196 --- [inventarios] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-12T19:11:13.074-06:00  INFO 32196 --- [inventarios] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-12T19:11:16.238-06:00  INFO 32196 --- [inventarios] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.8.Final
+2024-06-12T19:11:17.652-06:00  INFO 32196 --- [inventarios] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-12T19:11:22.197-06:00  INFO 32196 --- [inventarios] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-12T19:11:30.326-06:00  INFO 32196 --- [inventarios] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-12T19:11:30.331-06:00  INFO 32196 --- [inventarios] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-12T19:11:31.536-06:00  WARN 32196 --- [inventarios] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-12T19:11:33.205-06:00  INFO 32196 --- [inventarios] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-12T19:11:44.028-06:00  INFO 32196 --- [inventarios] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-06-12T19:11:44.052-06:00  INFO 32196 --- [inventarios] [main] c.m.inventarios.InventariosApplication   : Started InventariosApplication in 58.138 seconds (process running for 61.744)
+2024-06-12T19:11:44.234-06:00  INFO 32196 --- [inventarios] [main] c.m.inventarios.InventariosApplication   : Se ha iniciado la aplicación
+2024-06-12T19:12:46.946-06:00  INFO 32196 --- [inventarios] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-12T19:12:46.946-06:00  INFO 32196 --- [inventarios] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-06-12T19:12:46.948-06:00  INFO 32196 --- [inventarios] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-06-12T19:13:03.554-06:00  INFO 32196 --- [inventarios] [http-nio-8080-exec-2] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 1738 ms
+2024-06-12T19:16:43.518-06:00  INFO 32196 --- [inventarios] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'

@@ -4,13 +4,15 @@ import java.util.Date;
 import java.util.List;
 import com.muebleria.inventarios.modelos.Inventario;
 import com.muebleria.inventarios.modelos.InventarioReporte;
+import jakarta.persistence.SqlResultSetMapping;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface InventarioRepository extends JpaRepository<Inventario, Long> {
+public interface InventarioRepository extends JpaRepository<InventarioReporte, Long> {
     @Query(value = "CALL consultarInventario();", nativeQuery = true)
+    //@org.springframework.data.jpa.repository.query.Procedure(name = "InventarioReporteMapping")
     List<InventarioReporte> consultarInventario();
     @Query(value = "CALL consultarInventarioPorProducto(:idProducto);", nativeQuery = true)
     List<InventarioReporte> consultarInventarioPorProducto();
