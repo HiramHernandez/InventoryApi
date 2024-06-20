@@ -359,3 +359,31 @@ UNLOCK TABLES;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
 -- Dump completed on 2024-06-17 11:44:51
+CREATE TABLE usuarios (
+    id BIGINT NOT NULL AUTO_INCREMENT,
+    username VARCHAR(255),
+    password VARCHAR(255),
+    nombre VARCHAR(255),
+    apellido VARCHAR(255),
+    email VARCHAR(255),
+    telefono VARCHAR(255),
+    enabled TINYINT(1) DEFAULT 1,
+    perfil VARCHAR(255),
+    PRIMARY KEY (id)
+);
+
+
+CREATE TABLE roles (
+    rolId BIGINT NOT NULL,
+    rolNombre VARCHAR(255),
+    PRIMARY KEY (rolId)
+);
+
+CREATE TABLE usuario_rol (
+    usuarioRolId BIGINT NOT NULL AUTO_INCREMENT,
+    usuario_id BIGINT,
+    rol_id BIGINT,
+    PRIMARY KEY (usuarioRolId),
+    FOREIGN KEY (usuario_id) REFERENCES usuarios(id),
+    FOREIGN KEY (rol_id) REFERENCES roles(rolId)
+);
