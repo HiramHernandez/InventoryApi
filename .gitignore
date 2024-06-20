@@ -33,5 +33,5 @@ build/
 .vscode/
 
 ### custom ###
-logfile.log
+*.log
 .env
