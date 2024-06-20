@@ -31,6 +31,13 @@ public class MySecurityConfig {
             "/swagger-ui/index.html",
             "/openapi/openapi.yml"
     );
+
+    private final List<String> publicUrls = List.of(
+            "/api/generate-token",
+            "/api/usuarios/**",
+            "/api/almacenes/**"
+    );
+
     private final JwtAuthenticationEntryPoint unauthorizedHandler;
     private final UserDetailsServiceImp userDetailsServiceImpl;
     private final JwtAuthenticationFilter jwtAuthenticationFilter;
@@ -58,18 +65,13 @@ public class MySecurityConfig {
         http
                 .csrf(csrf -> csrf.disable())
                 .cors(cors -> cors.disable())
-                .authorizeHttpRequests(authorizeRequests ->
-                        authorizeRequests
-                                .requestMatchers(
-                                        "/swagger-ui/**",
-                                        "/v3/api-docs/**",
-                                        "/swagger-ui.html",
-                                        "/swagger-ui/index.html",
-                                        "/openapi/openapi.yml").permitAll()
-                                .requestMatchers("/api/generate-token", "/api/usuarios/**", "/api/almacenes/**").permitAll()
-                                .requestMatchers(HttpMethod.OPTIONS, "/**").permitAll()
-                                .anyRequest().authenticated()
-                )
+                .authorizeHttpRequests(authorizeRequests -> {
+                    swaggerUrls.forEach(url -> authorizeRequests.requestMatchers(url).permitAll());
+                    publicUrls.forEach(url -> authorizeRequests.requestMatchers(url).permitAll());
+                    authorizeRequests
+                            .requestMatchers(HttpMethod.OPTIONS, "/**").permitAll()
+                            .anyRequest().authenticated();
+                })
                 .exceptionHandling(exceptionHandling ->
                         exceptionHandling.authenticationEntryPoint(unauthorizedHandler)
                 )
