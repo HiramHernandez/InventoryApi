@@ -30,7 +30,6 @@ public class InventariosApplication {
 	private BCryptPasswordEncoder bCryptPasswordEncoder;
 	public static void loadDotEnv(){
 		Dotenv dotenv = Dotenv.load();
-		logger.info("Un nuevo código!!!!");
 		dotenv.entries().forEach(entry -> System.setProperty(entry.getKey(), entry.getValue()));
 	}
 	public static void main(String[] args) {
