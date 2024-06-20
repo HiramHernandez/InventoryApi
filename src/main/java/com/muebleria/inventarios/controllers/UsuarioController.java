@@ -25,7 +25,6 @@ public class UsuarioController {
 
     @PostMapping()
     public Usuario guardrUsuario(@RequestBody Usuario usuario) throws  Exception{
-        logger.info("Entro al controlador de usuarios -> POST Method");
         usuario.setPerfil("default.png");
 
         usuario.setPassword(this.bCryptPasswordEncoder.encode(usuario.getPassword()));

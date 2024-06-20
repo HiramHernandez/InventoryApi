@@ -7,19 +7,16 @@ import jakarta.persistence.*;
 @Entity
 @Table(name = "usuario_rol")
 public class UsuarioRol {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "usuario_rol_id")
     private Long usuarioRolId;
 
-    /*@ManyToOne(fetch = FetchType.EAGER)
-    private Usuario usuario;*/
-    @ManyToOne
+
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "usuario_id")
     private Usuario usuario;
 
-    /*@ManyToOne
-    private Rol rol;*/
     @ManyToOne
     @JoinColumn(name = "rol_id")
     private Rol rol;

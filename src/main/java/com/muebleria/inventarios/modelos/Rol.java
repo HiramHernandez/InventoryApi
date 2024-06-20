@@ -8,14 +8,12 @@ import java.util.Set;
 @Table(name = "roles")
 public class Rol {
     @Id
-    @Column
+    @Column(name = "rol_id")
     private Long rolId;
-    @Column
+    @Column(name = "rol_nombre")
     private String rolNombre;
 
-    /*@OneToMany(cascade = CascadeType.ALL,fetch = FetchType.LAZY,mappedBy = "rol")
-    private Set<UsuarioRol> usuarioRoles = new HashSet<>();*/
-    @OneToMany(mappedBy = "rol", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @OneToMany(cascade = CascadeType.ALL,fetch = FetchType.LAZY,mappedBy = "rol")
     private Set<UsuarioRol> usuarioRoles = new HashSet<>();
 
     public Rol(){

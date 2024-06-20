@@ -23,8 +23,6 @@ public class UsuarioService implements IUsuarioService {
     private UsuarioRepository usuarioRepository;
     @Autowired
     private RolRepository rolRepository;
-
-
     @Override
     public Usuario guardarUsuario(Usuario usuario, Set<UsuarioRol> usuarioRoles) throws Exception {
         Usuario usuarioLocal = usuarioRepository.findByUsername(usuario.getUsername());
@@ -33,11 +31,11 @@ public class UsuarioService implements IUsuarioService {
             throw new UsuarioFoundException("El usuario ya esta presente");
         }
         for(UsuarioRol usuarioRol: usuarioRoles){
-            System.out.println("AHi va el rol: " + usuarioRol.getRol());
-            //rolRepository.save(usuarioRol.getRol());
+            System.out.println("AHi va el rol: " + usuarioRol.getRol().getRolId());
+            rolRepository.save(usuarioRol.getRol());
         }
         try{
-            //usuario.getUsuarioRoles().addAll(usuarioRoles);
+            usuario.getUsuarioRoles().addAll(usuarioRoles);
             usuarioLocal = usuarioRepository.save(usuario);
             return usuarioLocal;
         }catch (DataAccessException ex){

@@ -12,7 +12,6 @@ import java.util.Set;
 @Entity
 @Table(name = "usuarios")
 public class Usuario implements UserDetails {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -26,9 +25,9 @@ public class Usuario implements UserDetails {
     private boolean enabled = true;
     private String perfil;
 
-    /*@OneToMany(cascade = CascadeType.ALL,fetch = FetchType.EAGER,mappedBy = "usuario")
+    @OneToMany(cascade = CascadeType.ALL,fetch = FetchType.EAGER,mappedBy = "usuario")
     @JsonIgnore
-    private Set<UsuarioRol> usuarioRoles = new HashSet<>();*/
+    private Set<UsuarioRol> usuarioRoles = new HashSet<>();
 
     public Usuario(){
 
@@ -80,9 +79,9 @@ public class Usuario implements UserDetails {
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         Set<Authority> autoridades = new HashSet<>();
-        /*this.usuarioRoles.forEach(usuarioRol -> {
+        this.usuarioRoles.forEach(usuarioRol -> {
             autoridades.add(new Authority(usuarioRol.getRol().getRolNombre()));
-        });*/
+        });
         return autoridades;
     }
 
@@ -142,11 +141,11 @@ public class Usuario implements UserDetails {
         this.perfil = perfil;
     }
 
-    /*public Set<UsuarioRol> getUsuarioRoles() {
+    public Set<UsuarioRol> getUsuarioRoles() {
         return usuarioRoles;
-    }*/
+    }
 
-    /*public void setUsuarioRoles(Set<UsuarioRol> usuarioRoles) {
+    public void setUsuarioRoles(Set<UsuarioRol> usuarioRoles) {
         this.usuarioRoles = usuarioRoles;
-    }*/
+    }
 }
