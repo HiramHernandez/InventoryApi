@@ -9,3 +9,4 @@ https://delta-dev-software.fr/implementing-retry-logic-in-spring-boot-with-sprin
 https://gustavopeiretti.com/spring-boot-retry/
 https://danielme.com/2023/09/18/curso-spring-data-jpa-rutinas-sql-procedimientos-y-funciones-almacenados/
 https://adictosaltrabajo.com/2018/04/25/invocar-a-procedimientos-usando-spring-boot-data-jpa/
+https://github.com/latecnologiaavanza/portal-examenes-dasboard-admin-user-backend/blob/master/pom.xml
