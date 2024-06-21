@@ -7,7 +7,6 @@ public class Constants {
     public static final List<String>  UNPROTECTED_URS =  List.of(
             "/api/almacenes",
             "/api/usuarios",
-            "/api/generate-token",
             "/swagger-ui.html",
             "/swagger-ui/index.html",
             "/openapi/openapi.yml",
